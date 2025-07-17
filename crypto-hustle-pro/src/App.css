@@ -1,0 +1,245 @@
+body {
+  background: black;
+  color: white;
+}
+
+.whole-page {
+  width: 60%; 
+  margin-left: 31%;
+  padding: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background: #1d1f1d;
+  margin: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.home-link{
+  font-size: 20px;
+}
+
+.home-link a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.home-link a:hover {
+  color: #d7d7d7;
+  text-decoration: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #232323;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-list {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 25px;
+  border-bottom: solid 3px white;
+  font-size: larger;
+  column-gap: 10px;
+}
+
+.main-list a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.main-list a:hover {
+  color: #d7d7d7;
+  text-decoration: none;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.coin-name {
+  text-align: left;
+}
+
+.coin-price {
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+  margin: 25px 50px 75px 30px;
+  padding: 0
+}
+
+li.main-list {
+  padding: 25px;
+  border-bottom: solid 3px white;
+  font-size: larger;
+}
+
+/* Crypto News */
+.crypto-news-container {
+  padding: 15px 10px;
+  width: 100%;
+  color: white;
+}
+
+.crypto-news-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.side-list {
+  list-style: none;
+  padding: 0;
+
+  overflow-y: auto;
+  margin: 0;
+}
+
+/* Each news article */
+.news-article {
+  margin-bottom: 30px;
+  font-size: 16px;
+  background-color: #444;
+  padding: 12px 16px;
+  border-radius: 10px;
+}
+
+.news-article a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.news-article a:hover,
+.news-article a:focus {
+  color: #d7d7d7;
+  text-decoration: none;
+}
+
+/* Search Bar */
+input[type="text"] {
+  width: 100%;             
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.coin-detail-container {
+  max-width: 80%;
+  margin: 50px auto;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.coin-detail-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.images {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 20%;
+  height: auto;
+}
+
+.coin-detail-description{
+  font-size: 30px;
+  text-align: center;
+}
+
+.coin-detail-container table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.coin-detail-container th,
+.coin-detail-container td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.coin-detail-container th {
+  background-color: #2e2e2e;
+  width: 40%;
+}
+
+.coin-detail-container a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.coin-detail-container a:hover {
+  color: #d7d7d7;
+}
+
+.coin-detail-container div {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.coin-chart-container {
+  margin-top: 30px;
+  margin: 40px auto;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(136, 132, 216, 0.5);
+  color: #fff;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
